@@ -1,103 +1,92 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="font-sans text-gray-800">
+      {/* Header / Navigation */}
+      {/* <header className="flex items-center justify-between px-6 py-4 shadow-md bg-white sticky top-0 z-50">
+        <h1 className="text-2xl font-bold text-emerald-600">NutriVibe</h1>
+        <nav className="space-x-6 text-gray-700 font-medium">
+          <a href="#recipes" className="hover:text-emerald-600">Recipes</a>
+          <a href="#results" className="hover:text-emerald-600">Results</a>
+          <a href="#plans" className="hover:text-emerald-600">Nutrition Plans</a>
+          <a href="#blog" className="hover:text-emerald-600">Blog</a>
+          <a href="#contact" className="hover:text-emerald-600">Contact</a>
+        </nav>
+      </header> */}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Hero Section */}
+      <section className="relative h-[80vh] bg-gray-200 flex items-center justify-center">
+        <Image
+          src="/images/veg.jpg"
+          alt="Fresh Vegetables"
+          fill
+          className="object-cover z-0"
+        />
+        <div className="z-10 bg-green-800/50 p-6 rounded-xl text-center text-white max-w-2xl">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Nourish. Thrive. Repeat.</h1>
+          <p className="text-lg">Discover the power of plant-forward nutrition. Healthy eating made vibrant, simple, and impactful.</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-20 px-6 max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-12">Why Nutrition Matters</h2>
+        <div className="grid md:grid-cols-3 gap-10">
+          <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
+            <Image src="/icons/heart.svg" alt="Heart Health" width={48} height={48} className="mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2">Heart Health</h3>
+            <p>Vegetarian diets help lower blood pressure and cholesterol.</p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
+            <Image src="/icons/brain.svg" alt="Mental Clarity" width={48} height={48} className="mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2">Mental Clarity</h3>
+            <p>Whole foods rich in nutrients boost brain function and mood.</p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
+            <Image src="/icons/gut.svg" alt="Digestive Health" width={48} height={48} className="mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2">Gut Health</h3>
+            <p>Fiber-rich meals nourish your gut microbiome and digestion.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Teasers */}
+      <section className="bg-emerald-50 py-16 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+          <div className="bg-white p-6 rounded-xl shadow border hover:shadow-lg transition">
+            <Image src="/images/foodr.jpg" alt="Recipes" width={600} height={400} className="rounded-lg mb-4" />
+            <h3 className="text-xl font-bold mb-2">Explore Recipes</h3>
+            <p>Find delicious vegetarian recipes for any meal or mood.</p>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow border hover:shadow-lg transition">
+            <Image src="/images/results.jpg" alt="Results" width={600} height={400} className="rounded-lg mb-4" />
+            <h3 className="text-xl font-bold mb-2">See Results</h3>
+            <p>Discover how real people transformed their lives through food.</p>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow border hover:shadow-lg transition">
+            <Image src="/images/blog.jpg" alt="Blog" width={600} height={400} className="rounded-lg mb-4" />
+            <h3 className="text-xl font-bold mb-2">Read the Blog</h3>
+            <p>Get insights, food tips, and the latest nutrition trends.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Content Section */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6">A Journey to Wellness Starts with Food</h2>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            At NutriVibe, we believe in food as a foundation for wellness. Whether you're transitioning to a vegetarian lifestyle or simply looking to eat cleaner, we're here with the knowledge, tools, and inspiration to support your journey. No gimmicks, no fads — just nourishing, whole foods.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-emerald-600 py-20 px-6 text-white text-center">
+        <h2 className="text-3xl font-bold mb-4">Ready to Feel Your Best?</h2>
+        <p className="text-lg mb-6">Explore plant-based plans, easy recipes, and expert tips tailored just for you.</p>
+        <a href="#plans" className="inline-block px-6 py-3 bg-white text-emerald-600 font-semibold rounded-xl hover:bg-gray-100 transition">Explore Plans</a>
+      </section>
+    </main>
   );
 }
