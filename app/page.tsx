@@ -1,3 +1,4 @@
+import HomepageAdditions from "@/components/HomepageAdditions";
 import Image from "next/image";
 
 export default function HomePage() {
@@ -34,17 +35,17 @@ export default function HomePage() {
         <h2 className="text-3xl font-bold text-center mb-12">Why Nutrition Matters</h2>
         <div className="grid md:grid-cols-3 gap-10">
           <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
-            <Image src="/icons/heart.svg" alt="Heart Health" width={48} height={48} className="mx-auto mb-4" />
+            <Image src="/images/heart.png" alt="Heart Health" width={48} height={48} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">Heart Health</h3>
             <p>Vegetarian diets help lower blood pressure and cholesterol.</p>
           </div>
           <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
-            <Image src="/icons/brain.svg" alt="Mental Clarity" width={48} height={48} className="mx-auto mb-4" />
+            <Image src="/images/mental.png" alt="Mental Clarity" width={48} height={48} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">Mental Clarity</h3>
             <p>Whole foods rich in nutrients boost brain function and mood.</p>
           </div>
           <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
-            <Image src="/icons/gut.svg" alt="Digestive Health" width={48} height={48} className="mx-auto mb-4" />
+            <Image src="/images/digestive.png" alt="Digestive Health" width={48} height={48} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">Gut Health</h3>
             <p>Fiber-rich meals nourish your gut microbiome and digestion.</p>
           </div>
@@ -72,12 +73,14 @@ export default function HomePage() {
         </div>
       </section>
 
+      <HomepageAdditions />
+
       {/* Additional Content Section */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">A Journey to Wellness Starts with Food</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
-            At NutriVibe, we believe in food as a foundation for wellness. Whether you're transitioning to a vegetarian lifestyle or simply looking to eat cleaner, we're here with the knowledge, tools, and inspiration to support your journey. No gimmicks, no fads — just nourishing, whole foods.
+            At Finnery, we believe in food as a foundation for wellness. Whether you&apos;re transitioning to a vegetarian lifestyle or simply looking to eat cleaner, we're here with the knowledge, tools, and inspiration to support your journey. No gimmicks, no fads — just nourishing, whole foods.
           </p>
         </div>
       </section>
@@ -85,8 +88,10 @@ export default function HomePage() {
       <section className="bg-emerald-600 py-20 px-6 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">Ready to Feel Your Best?</h2>
         <p className="text-lg mb-6">Explore plant-based plans, easy recipes, and expert tips tailored just for you.</p>
-        <a href="#plans" className="inline-block px-6 py-3 bg-white text-emerald-600 font-semibold rounded-xl hover:bg-gray-100 transition">Explore Plans</a>
+        <a href="/nutrition" className="inline-block px-6 py-3 bg-white text-emerald-600 font-semibold rounded-xl hover:bg-gray-100 transition">Explore Plans</a>
       </section>
+
+
     </main>
   );
 }

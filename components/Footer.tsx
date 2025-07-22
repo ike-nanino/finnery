@@ -1,76 +1,61 @@
-import Link from 'next/link';
+import Link from "next/link";
+import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white pt-20 pb-10">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-          <div>
-            <div className="flex items-center mb-6">
-              <div className="bg-emerald-500 w-8 h-8 rounded-full mr-3"></div>
-              <span className="text-2xl font-bold">NutriVital</span>
-            </div>
-            <p className="text-gray-400 mb-6">
-              Personalized nutrition for optimal health and performance.
-            </p>
-            <div className="flex space-x-4">
-              {[/* Social icons */].map((_, i) => (
-                <div key={i} className="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center">
-                  {/* Social icon placeholder */}
-                </div>
-              ))}
-            </div>
+    <footer className="bg-green-800 text-white py-10">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 px-6">
+        {/* Company Info */}
+        <div>
+          <h2 className="text-xl font-semibold mb-4">Finnery Nutritional Centre</h2>
+          <p className="text-sm">
+            Personalized nutrition plans and wellness solutions to support a healthier lifestyle.
+          </p>
+        </div>
+
+        {/* Quick Links */}
+        <div>
+          <h3 className="text-lg font-medium mb-3">Quick Links</h3>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/" className="hover:underline">Home</Link></li>
+            <li><Link href="/recipes" className="hover:underline">Recipes</Link></li>
+            <li><Link href="/nutrition-plan" className="hover:underline">Nutrition Plan</Link></li>
+            <li><Link href="/contact" className="hover:underline">Contact</Link></li>
+            <li><Link href="/blog" className="hover:underline">Blog</Link></li>
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div>
+          <h3 className="text-lg font-medium mb-3">Contact</h3>
+          <ul className="text-sm space-y-2">
+            <li className="flex items-center gap-2">
+              <Phone size={16} /> 321-466-5535
+            </li>
+            <li className="flex items-center gap-2">
+              <Mail size={16} /> shirleytortsen@outlook.com
+            </li>
+            <li className="flex items-center gap-2">
+              <MapPin size={16} /> 5 Main St, Titusville, FL 32796
+            </li>
+          </ul>
+        </div>
+
+        {/* Social Media */}
+        <div>
+          <h3 className="text-lg font-medium mb-3">Follow Us</h3>
+          <div className="flex gap-4">
+            <a href="#" aria-label="Facebook" className="hover:text-gray-300"><Facebook /></a>
+            <a href="#" aria-label="Instagram" className="hover:text-gray-300"><Instagram /></a>
+            <a href="#" aria-label="Twitter" className="hover:text-gray-300"><Twitter /></a>
           </div>
-          
-          {footerLinks.map((section, i) => (
-            <div key={i}>
-              <h3 className="text-lg font-bold mb-6">{section.title}</h3>
-              <ul className="space-y-3">
-                {section.links.map((link, j) => (
-                  <li key={j}>
-                    <Link href={link.href} className="text-gray-400 hover:text-emerald-400 transition-colors">
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
         </div>
-        
-        <div className="border-t border-gray-800 mt-16 pt-8 text-center text-gray-500">
-          <p>© {new Date().getFullYear()} NutriVital. All rights reserved.</p>
-        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="mt-10 text-center text-sm text-white/80 border-t border-white/10 pt-6 px-6">
+        &copy; {new Date().getFullYear()} Finnery Nutritional Centre. All rights reserved.
       </div>
     </footer>
   );
 }
-
-const footerLinks = [
-  {
-    title: "Company",
-    links: [
-      { href: "/about", label: "About Us" },
-      { href: "/careers", label: "Careers" },
-      { href: "/contact", label: "Contact" },
-      { href: "/blog", label: "Blog" },
-    ]
-  },
-  {
-    title: "Resources",
-    links: [
-      { href: "/nutrition", label: "Nutrition Guides" },
-      { href: "/recipes", label: "Recipes" },
-      { href: "/webinars", label: "Webinars" },
-      { href: "/research", label: "Research" },
-    ]
-  },
-  {
-    title: "Legal",
-    links: [
-      { href: "/privacy", label: "Privacy Policy" },
-      { href: "/terms", label: "Terms of Service" },
-      { href: "/cookies", label: "Cookie Policy" },
-    ]
-  }
-];

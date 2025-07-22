@@ -45,7 +45,6 @@ export default function Header() {
     { name: 'Home', path: '/' },
     { name: 'Nutrition', path: '/nutrition' },
     { name: 'Recipes', path: '/recipes' },
-    { name: 'Meal Plans', path: '/plans' },
     { name: 'About', path: '/about' },
   ];
  
@@ -65,15 +64,15 @@ export default function Header() {
       <div
         className={`relative cursor-pointer font-medium transition-colors duration-300 ${
           isScrolled
-            ? `text-slate-700 hover:text-dark ${active ? 'text-dark' : ''}`
-            : `text-white hover:text-gold ${active ? 'text-gold' : ''}`
+            ? `text-slate-700 hover:text-white transition-colors duration-300 ${active ? 'text-white' : ''}`
+            : `text-white hover:text-gold ${active ? 'text-white' : ''}`
         }`}
       >
         {children}
         {active && (
           <span
             className={`absolute -bottom-1 left-0 h-0.5 w-full ${
-              isScrolled ? 'bg-dark' : 'bg-gold'
+              isScrolled ? 'bg-green-400' : 'bg-green-800'
             }`}
           />
         )}
@@ -94,8 +93,8 @@ export default function Header() {
       <div
         className={`px-4 py-2 border-l-4 transition-all duration-200 ${
           active
-            ? 'border-dark bg-indigo-50 text-gold font-medium'
-            : 'border-transparent hover:border-dark hover:bg-dark/50 text-black'
+            ? 'border-green-300 bg-indigo-50 text-gold font-medium'
+            : 'border-transparent hover:border-green-500 hover:bg-green-800/50 text-black'
         }`}
       >
         {children}
@@ -106,7 +105,7 @@ export default function Header() {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-green-700 shadow-md py-4' : 'bg-green-300 py-4 text-white'
+        isScrolled ? 'bg-green-400 shadow-md py-4' : 'bg-green-700 py-4 text-white'
       }`}
     >
       <div className="flex justify-between items-center px-4">
@@ -114,7 +113,7 @@ export default function Header() {
         <Link href="/">
           <div
             className={`font-bold text-xl md:text-2xl flex items-center  ${
-              isScrolled ? 'text-dark' : 'text-white'
+              isScrolled ? 'text-green-900' : 'text-white'
             }`}
           >
             {/* <Image
@@ -143,7 +142,7 @@ export default function Header() {
 
           <Link href="/contact">
           <button
-            className={`hover:bg-[rgb(133,102,35)] ${
+            className={`hover:bg-green-800/50] ${
               isScrolled ? 'bg-green-300' : 'bg-green-800'
             } text-white py-2 px-6 rounded font-medium transition-colors duration-300`}
           >
@@ -159,7 +158,7 @@ export default function Header() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className={`p-2 rounded-full ${
-              isScrolled ? 'text-dark' : 'text-white'
+              isScrolled ? 'text-white' : 'text-white'
             }`}
           >
             {mobileMenuOpen ? (
@@ -194,7 +193,7 @@ export default function Header() {
 
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <div className="w-full mt-4">
-                  <button className="w-full py-2 text-sm bg-[rgb(163,122,45)] hover:bg-[rgb(133,102,35)] text-white rounded-md">
+                  <button className="w-full py-2 text-sm bg-green-700 hover:bg-green-700/50 text-white rounded-md">
                     Contact
                   </button>
                 </div>

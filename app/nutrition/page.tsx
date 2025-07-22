@@ -70,7 +70,7 @@ const plans = [
       Snack: "Mixed nuts",
       Dinner: "Baked salmon with cauliflower mash",
     },
-    pdf: "/plans/lowcarb.pdf",
+    pdf: "/plans/low-carb.pdf",
   },
   {
     id: "gluten-free",
@@ -89,7 +89,7 @@ const plans = [
       Snack: "Rice cakes with almond butter",
       Dinner: "Stuffed bell peppers with ground turkey",
     },
-    pdf: "/plans/glutenfree.pdf",
+    pdf: "/plans/glutten-free.pdf",
   },
 ];
 
