@@ -17,9 +17,9 @@ export default function HomePage() {
       </header> */}
 
       {/* Hero Section */}
-      <section className="relative h-[80vh] bg-gray-200 flex items-center justify-center">
+      <section className="relative h-[60vh] lg:h-[80vh] bg-gray-200 flex items-center justify-center px-4">
         <Image
-          src="/images/veg.jpg"
+          src="/images/homehero.jpg"
           alt="Fresh Vegetables"
           fill
           className="object-cover z-0"

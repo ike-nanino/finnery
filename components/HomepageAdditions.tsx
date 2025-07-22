@@ -48,29 +48,34 @@ export default function HomepageAdditions() {
       </div>
 
       {/* Meet the Nutritionist Section */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <Image
-            src="/images/sh.jpg"
-            alt="Nutritionist"
-            width={500}
-            height={500}
-            className="rounded-2xl shadow-lg object-cover w-full h-auto"
-          />
-        </div>
-        <div>
-          <h2 className="text-3xl font-bold text-emerald-700 mb-4">Meet Shirley Tortsen</h2>
-          <p className="text-gray-700 mb-4">
-            Shirley, the founder of Finnery Nutritional Centre, has over a decade of experience guiding individuals
-            toward healthier lives. She specializes in fitness nutrition, plant-based diets, and personalized
-            wellness plans.
-          </p>
-          <p className="text-gray-600">
-            Her philosophy is rooted in science-backed methods and empathetic coaching, helping you make lasting
-            lifestyle changes.
-          </p>
-        </div>
-      </div>
+     <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+  <div>
+    <Image
+      src="/images/sh.jpg"
+      alt="Fresh produce being misted in a wellness kitchen"
+      width={500}
+      height={500}
+      className="rounded-2xl shadow-lg object-cover w-full h-auto"
+    />
+  </div>
+  <div>
+    <h2 className="text-3xl font-bold text-emerald-700 mb-4">Our Philosophy on Wellness</h2>
+    <p className="text-gray-700 mb-4">
+      At Finnery Nutritional Centre, we believe nutrition is more than a science, it’s a lifestyle. Our approach blends
+      clean, plant-forward eating with sustainable habits and personalized guidance, making wellness both accessible
+      and enjoyable.
+    </p>
+    <p className="text-gray-700 mb-4">
+      The image above reflects our values: freshness, intentional choices, and connection to nature. Every plan we
+      create stems from a deep understanding of food as fuel and medicine.
+    </p>
+    <p className="text-gray-600">
+      Whether you're on a journey to lose weight, improve energy, or simply eat better, we’re here to support you with
+      practical tools and empathy-driven care.
+    </p>
+  </div>
+</div>
+
 
       {/* How It Works Section */}
       <div className="max-w-5xl mx-auto text-center">

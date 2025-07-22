@@ -6,8 +6,23 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 export default function AboutPage() {
   return (
     <main className="px-6 md:px-20 py-10 space-y-20">
+
+        <section className="relative h-[80vh] bg-gray-200 flex items-center justify-center px-4">
+                <Image
+                  src="/images/about.jpg"
+                  alt="Fresh Vegetables"
+                  fill
+                  className="object-cover z-0"
+                />
+                <div className="z-10 bg-green-800/50 p-6 rounded-xl text-center text-white max-w-2xl">
+                  <h1 className="text-4xl md:text-6xl font-bold mb-4">About Us</h1>
+                  <p className="text-lg">Get to know us</p>
+                </div>
+              </section>
+
+
       {/* Hero */}
-      <section className="relative h-[400px] w-full rounded-2xl overflow-hidden">
+      <section className="relative h-[400px] w-full rounded-2xl overflow-hidden mt-10">
         <Image
           src="/images/about-hero.jpg"
           alt="About Finnery"

@@ -102,19 +102,20 @@ export default function NutritionPlanPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative h-[50vh] lg:h-[70vh] bg-gray-200 flex items-center justify-center px-4">
+      <section className="relative h-[60vh] lg:h-[80vh] bg-gray-200 flex items-center justify-center px-4">
         <Image
-          src="/images/nutrition.jpg"
+          src="/images/nuthero.jpg"
           alt="Healthy Vegetarian Food"
           fill
           className="object-cover z-0"
         />
         <div className="z-10 bg-green-800/50 p-6 rounded-xl text-center text-white max-w-2xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Wholesome Recipes
+            Personalized Nutrition Plans
           </h1>
           <p className="text-lg">
-            Delicious plant-based meals that nourish and satisfy.
+            Achieve your health goals with balanced, plant-forward meal
+            strategies tailored just for you.
           </p>
         </div>
       </section>

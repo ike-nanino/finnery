@@ -199,9 +199,9 @@ export default function RecipesPage() {
   return (
     <main className="font-sans text-gray-800">
       {/* Hero */}
-      <section className="relative h-[50vh] lg:h-[70vh] bg-gray-200 flex items-center justify-center px-4">
+      <section className="relative h-[60vh] lg:h-[80vh] bg-gray-200 flex items-center justify-center px-4">
         <Image
-          src="/images/hero-recipes.jpg"
+          src="/images/recipes-hero.jpg"
           alt="Healthy Vegetarian Food"
           fill
           className="object-cover z-0"
