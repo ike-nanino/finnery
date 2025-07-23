@@ -104,7 +104,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={` ${
         isScrolled ? 'bg-green-400 shadow-md py-4' : 'bg-green-700 py-4 text-white'
       }`}
     >
@@ -181,7 +181,7 @@ export default function Header() {
             className="lg:hidden bg-white shadow-lg"
           >
             <div className="py-4 px-4 flex flex-col space-y-3">
-              {navItems.map((item) => (
+              {/* {navItems.map((item) => (
                 <MobileNavLink
                   key={item.path}
                   href={item.path}
@@ -189,7 +189,7 @@ export default function Header() {
                 >
                   {item.name}
                 </MobileNavLink>
-              ))}
+              ))} */}
 
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <div className="w-full mt-4">
