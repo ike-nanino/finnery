@@ -15,7 +15,7 @@ export default function Header2() {
   const pathname = usePathname()
 
   return (
-    <header className="lg:hidden w-full bg-white shadow-md mx-auto">
+    <header className="lg:hidden w-full bg-white shadow-md">
       <div className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Tab Navigation: Visible on mobile, hidden on lg */}
