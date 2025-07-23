@@ -79,15 +79,15 @@ export const metadata: Metadata = {
     description:
       "Finnery Nutritional Centre is a leading provider of nutritional services, offering personalized nutrition plans, expert dietary advice, and a wide range of resources to help individuals achieve their health and wellness goals.",
     url: "https://www.finnerynutritionalcentre.com",
-    siteName: "Morgan & Associates",
+    siteName: "Finnery Nutritional Centre",
     type: "website",
     locale: "en_US",
     images: [
       {
-        url: "https://www.morgannassociates.com/og-image.jpg",
+        url: "https://www.finnerynutritionalcentre.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Morgan & Associates - Global Law Firm",
+        alt: "Finnery Nutritional Centre",
       },
     ],
   },
