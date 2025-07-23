@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Finnery Nutritional Centre",
     description:
-      "Trusted legal advisors for individuals, businesses and institutions around the world. Explore our legal services and expertise.",
+      "Finnery Nutritional Centre is a leading provider of nutritional services, offering personalized nutrition plans, expert dietary advice, and a wide range of resources to help individuals achieve their health and wellness goals.",
     url: "https://www.finnerynutritionalcentre.com",
     siteName: "Morgan & Associates",
     type: "website",
